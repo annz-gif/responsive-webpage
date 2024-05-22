@@ -9,9 +9,16 @@ body{
     font-family: montserrat;
 
 }
+.container{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(45deg,#f514c4,#7462ff,#ff6262,#23d5ab);
+    background-size: 300% 300%;
+    animation:color 12s ease-in-out infinite;
+}
 nav{
-    background: blue;
-    height: 80px;
+    background: linear-gradient(45deg,#f514c4,#7462ff,#ff6262,#23d5ab);
+    height: 55px;
     width:100%;
 }
 label.logo{
@@ -33,7 +40,7 @@ nav ul li{
     border-radius: 3px;
 }
 a.active,a:hover{
-    background:#1b9fff ;
+    background:#b8c8d3 ;
     transition: .5s;
 }
 .checkbtn{
@@ -47,6 +54,18 @@ a.active,a:hover{
 }
 #check{
 display: none;
+}
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+
 }
 @media (max-width:952px){
     label.logo{
@@ -90,9 +109,4 @@ display: none;
 
         }
     }
-}
-section{
-    background: url(task3/film-texture_1086846-2191.avif) no-repeat;
-    background-size: cover;
-    height: calc(100vh -80px);
 }
